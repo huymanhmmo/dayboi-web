@@ -80,6 +80,10 @@ const faqSchema = {
 };
 
 const combinedSchema = [articleSchema, localBusinessSchema, faqSchema];
+
+let enSlug = loc.slug.replace('hoc-boi-', 'swimming-lessons-');
+if (loc.slug === 'hoc-boi-tphcm') enSlug = 'swimming-lessons-ho-chi-minh';
+const alternateUrl = `/en/${enSlug}/`;
 ---
 
 <PageLayout
@@ -90,6 +94,8 @@ const combinedSchema = [articleSchema, localBusinessSchema, faqSchema];
   type="article"
   breadcrumbs={breadcrumbs}
   schema={combinedSchema}
+  alternateUrl={alternateUrl}
+  alternateLang="en"
 >
 
   <!-- Hero Section -->
