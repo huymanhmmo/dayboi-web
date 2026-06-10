@@ -25,4 +25,6 @@ pnpm-debug.log*
 
 # Google Indexing Credentials
 google-indexing-key.json
+dayboivip-*.json
+
 
